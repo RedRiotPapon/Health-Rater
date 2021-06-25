@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ProjectHR.jnlp">
+  <information>
+    <title>ProjectHR</title>
+    <vendor>itxpa</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ProjectHR.jar" size="20861224" download="eager" />
+    <jar href="lib\controlsfx-8.40.11.jar" size="985420" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\ikonli-core-2.6.0.jar" size="10201" download="eager" />
+    <jar href="lib\ikonli-javafx-2.6.0.jar" size="40473" download="eager" />
+    <jar href="lib\jfoenix-8.0.7.jar" size="2631271" download="eager" />
+    <jar href="lib\jsoup-1.13.1.jar" size="393867" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.25.jar" size="2428320" download="eager" />
+    <jar href="lib\ojdbc14-9.2.0.1.jar" size="1193177" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="projecthr.ProjectHR"  name="ProjectHR" />
+  <update check="always"/>
+</jnlp>
