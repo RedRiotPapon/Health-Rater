@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootanchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" style="-fx-background-color: #424242;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projecthr.HomePageController">
+   <children>
+      <Circle fill="DODGERBLUE" layoutX="646.0" layoutY="183.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="DODGERBLUE" layoutX="251.0" layoutY="446.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="DODGERBLUE" layoutX="646.0" layoutY="457.0" radius="82.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <AnchorPane prefHeight="550.0" prefWidth="544.0" style="-fx-background-color: #424242;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Circle fill="DODGERBLUE" layoutX="242.0" layoutY="459.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="202.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Circle>
+            <Label layoutX="8.0" layoutY="97.0" prefHeight="22.0" prefWidth="39.0" text=" User : " textFill="WHITE" />
+            <JFXSpinner layoutY="32.0" prefHeight="139.0" prefWidth="144.0" />
+            <Circle fill="DODGERBLUE" layoutX="238.0" layoutY="192.0" radius="77.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Circle>
+            <JFXButton buttonType="RAISED" layoutY="-2.0" prefHeight="560.0" prefWidth="228.0" ripplerFill="#ebebeb" style="-fx-background-color: #1e90ff;" text=" " AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="550.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="119.0">
+               <fill>
+                  <LinearGradient endX="0.1761904761904762" endY="0.7142857142857143" startX="0.980952380952381" startY="0.7047619047619048">
+                     <stops>
+                        <Stop color="#079bf5" />
+                        <Stop color="#404040" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <CubicCurve controlX1="-263.0" controlX2="-24.852310180664062" controlY1="68.5" controlY2="112.5" endX="64.0" endY="4.0" fill="#424242" layoutX="164.0" layoutY="72.0" startX="-245.5" startY="-218.0" stroke="#424242" strokeWidth="0.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </CubicCurve>
+            <JFXButton fx:id="hrate1" buttonType="RAISED" layoutY="-1.0" onAction="#hpopup" prefHeight="84.0" prefWidth="228.0" style="-fx-background-color: #424242; -fx-background-radius: 5%;" textFill="#424242">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="365.0" fitWidth="311.0" layoutX="-41.0" layoutY="-114.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Lovepik_com-832490340-Color%20light%20effect%20e-commerce%20neon%20circular%20banner%20double%2011%20com.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblnam" alignment="CENTER" layoutX="32.0" layoutY="78.0" prefHeight="38.0" prefWidth="174.0" text="Papon" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Label>
+            <Circle fill="#00ff51" layoutX="82.0" layoutY="97.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </Circle>
+            <JFXButton fx:id="bmibtn" buttonType="RAISED" layoutX="151.0" layoutY="361.0" onAction="#bmi" prefHeight="179.0" prefWidth="174.0" ripplerFill="#ff7777" style="-fx-background-radius: 50%; -fx-background-color: #424242;" text="BMI" textFill="#ff8282" AnchorPane.bottomAnchor="10.0">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../balance-sheet.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="255.0" opacity="0.67" prefHeight="28.0" prefWidth="154.0" style="-fx-background-color: red;" text=" " />
+            <JFXButton fx:id="hrate" buttonType="RAISED" layoutX="-14.0" layoutY="243.0" onAction="#hpopup" prefHeight="38.0" prefWidth="164.0" style="-fx-background-radius: 5%;" text="Heart Rate" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pulse.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="305.0" opacity="0.67" prefHeight="28.0" prefWidth="154.0" style="-fx-background-color: grey;" text=" " />
+            <JFXButton fx:id="bp" buttonType="RAISED" layoutX="-22.0" layoutY="288.0" onAction="#gotobp" prefHeight="62.0" prefWidth="208.0" style="-fx-background-radius: 5%;" text="Blood Pressure" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pressure-gauge.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="#4d4d4d" height="106.0" layoutX="247.0" opacity="0.94" stroke="BLACK" strokeType="INSIDE" width="279.0">
+               <effect>
+                  <DropShadow color="#000000e7" height="44.72" radius="20.38" spread="0.07" width="38.8" />
+               </effect>
+            </Rectangle>
+            <Label fx:id="suggestivetext" alignment="CENTER" layoutX="252.0" layoutY="19.0" opacity="0.91" prefHeight="84.0" prefWidth="268.0" style="-fx-background-radius: 20%;" textFill="#f2f2f2" wrapText="true">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="14.0" />
+               </font>
+               <effect>
+                  <Glow level="0.0" />
+               </effect>
+            </Label>
+            <ImageView fx:id="warn" fitHeight="22.0" fitWidth="21.0" layoutX="373.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pngwing.com%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="62.0" fitWidth="164.0" layoutX="33.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image-from-rawpixel-id-2582072-png.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="stat" buttonType="RAISED" layoutX="158.0" layoutY="123.0" onAction="#showStat" prefHeight="139.0" prefWidth="144.0" ripplerFill="#ff7777" style="-fx-background-radius: 50%; -fx-background-color: #424242;" text="Stats" textFill="#ff6f6f">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../statistics.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Polygon layoutX="524.0" layoutY="60.0" points="232.0, -86.0, 232.0, 231.0, 5.0, -86.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.bottomAnchor="222.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <fill>
+            <LinearGradient endX="0.20476190476190478" endY="0.7333333333333334" startX="0.9333333333333333" startY="0.7523809523809524">
+               <stops>
+                  <Stop color="#323232" />
+                  <Stop color="#4398ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Polygon>
+      <JFXButton fx:id="ddbtn" buttonType="RAISED" layoutX="559.0" layoutY="94.0" onAction="#dd" prefHeight="179.0" prefWidth="174.0" style="-fx-background-color: #424242; -fx-background-radius: 50%;" text="Disease Diary" textFill="#8fd0ff" wrapText="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../diary.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Polygon layoutX="732.0" layoutY="342.0" points="-188.0, 208.0, 26.0845947265625, 210.5, 26.0845947265625, -44.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="546.0" AnchorPane.rightAnchor="-20.0" AnchorPane.topAnchor="298.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <fill>
+            <LinearGradient endX="0.49047619047619045" endY="0.719047619047619" startX="1.0" startY="0.7142857142857143">
+               <stops>
+                  <Stop color="#f50745" />
+                  <Stop color="#201d2f" offset="0.007662835249042145" />
+                  <Stop color="#2f9bff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Polygon>
+      <JFXButton fx:id="tips" buttonType="RAISED" layoutX="574.0" layoutY="388.0" onAction="#suggest" prefHeight="139.0" prefWidth="144.0" ripplerFill="#ff7777" style="-fx-background-radius: 50%; -fx-background-color: #424242;" text="Tips" textFill="#8fd0ff">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../idea.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Circle fill="#1f93ff00" layoutX="430.0" layoutY="284.0" radius="130.0" strokeType="INSIDE" strokeWidth="30.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.580952380952381">
+               <stops>
+                  <Stop color="#4a4646" />
+                  <Stop color="#30baff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke></Circle>
+      <Circle fx:id="rcircle" fill="#1f93ff00" layoutX="430.0" layoutY="284.0" radius="130.0" rotate="-112.2" strokeType="INSIDE" strokeWidth="30.0" style="-fx-stroke-dash-array: 410;">
+         <stroke>
+            <LinearGradient endX="0.8857142857142857" endY="0.7666666666666666" startX="0.7619047619047619">
+               <stops>
+                  <Stop color="#079bf5" />
+                  <Stop color="#c664c9" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke></Circle>
+      <JFXButton fx:id="ratebtn" buttonType="RAISED" layoutX="322.0" layoutY="175.0" onAction="#showRating" prefHeight="219.0" prefWidth="217.0" style="-fx-background-color: whitesmoke; -fx-background-radius: 50%;" text="Rating">
+         <font>
+            <Font size="41.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="57.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../star.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="logoutbtn" buttonType="RAISED" layoutX="686.0" onAction="#logout" prefHeight="50.0" prefWidth="26.0" style="-fx-background-radius: 50%;" text=" ">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../PinClipart.com_government-power-clipart_1821638.png" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Log Out" />
+         </tooltip>
+      </JFXButton>
+   </children>
+</AnchorPane>

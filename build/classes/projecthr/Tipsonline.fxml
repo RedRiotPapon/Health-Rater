@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="212.0" prefWidth="750.0" style="-fx-background-color: #424242;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="projecthr.TipsonlineController">
+   <children>
+      <JFXButton fx:id="okay" cancelButton="true" defaultButton="true" layoutX="375.0" layoutY="165.0" onAction="#close" prefHeight="34.0" prefWidth="81.0" style="-fx-background-color: whitesmoke;" text="Okay" textFill="#10265b" />
+      <Label fx:id="label" layoutX="204.0" layoutY="-2.0" prefHeight="167.0" prefWidth="546.0" text="Label" textFill="#dddddd" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="212.0" fitWidth="209.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/itxpa/OneDrive/Documents/NetBeansProjects/ProjectHR/src/tp.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
