@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="646.0" style="-fx-background-color: #243036;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projecthr.PressureController">
+   <children>
+      <Circle fill="#364052f5" layoutX="326.0" layoutY="166.0" opacity="0.88" radius="119.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label fx:id="label" alignment="CENTER" layoutX="226.0" layoutY="131.0" prefHeight="62.0" prefWidth="99.0" style="-fx-text-alignment: center;" text="120" textAlignment="CENTER" textFill="#3f8afc" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1" layoutX="336.0" layoutY="131.0" prefHeight="70.0" prefWidth="99.0" style="-fx-text-alignment: center;" text="80" textAlignment="CENTER" textFill="#3f8afc" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="label11" alignment="CENTER" layoutX="310.0" layoutY="131.0" prefHeight="70.0" prefWidth="31.0" style="-fx-text-alignment: center;" text="/" textAlignment="CENTER" textFill="#3f8afc" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" alignment="CENTER" layoutX="82.0" layoutY="16.0" prefHeight="62.0" prefWidth="99.0" style="-fx-text-alignment: center;" text="Systolic" textAlignment="CENTER" textFill="#3f8afc" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label21" alignment="CENTER" layoutX="429.0" layoutY="16.0" prefHeight="62.0" prefWidth="99.0" style="-fx-text-alignment: center;" text="Diastolic" textAlignment="CENTER" textFill="#3f8afc" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <JFXSlider fx:id="sysSlider" layoutX="-5.0" layoutY="165.0" max="180.0" prefHeight="104.0" prefWidth="291.0" showTickLabels="true" style="-fx-rotate: 270;" value="120.0" />
+      <JFXSlider fx:id="diaslider" layoutX="361.0" layoutY="198.0" max="180.0" prefHeight="44.0" prefWidth="291.0" showTickLabels="true" style="-fx-rotate: 270;" value="80.0" />
+      <JFXButton fx:id="confirm" layoutX="286.0" layoutY="329.0" onAction="#confirm2update" prefHeight="34.0" prefWidth="81.0" style="-fx-background-color: #364052;" text="Confirm" textFill="#54ff79" />
+   </children>
+</AnchorPane>

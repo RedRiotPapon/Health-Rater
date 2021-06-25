@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="265.0" prefWidth="600.0" style="-fx-background-color: #243036;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projecthr.HRATEController">
+   <children>
+      <Circle fill="#374154f2" layoutX="309.0" layoutY="78.0" opacity="0.88" radius="66.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label fx:id="label" alignment="CENTER" layoutX="252.0" layoutY="37.0" prefHeight="82.0" prefWidth="114.0" style="-fx-text-alignment: center;" text="100" textAlignment="CENTER" textFill="#3f8afc" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="57.0" />
+         </font>
+      </Label>
+      <JFXSlider fx:id="slider" layoutX="49.0" layoutY="161.0" max="200.0" prefHeight="24.0" prefWidth="520.0" showTickLabels="true" value="100.0" />
+      <JFXButton fx:id="confirm" layoutX="269.0" layoutY="220.0" onAction="#updateHr" prefHeight="34.0" prefWidth="81.0" style="-fx-background-color: #364052;" text="Confirm" textFill="#54ff79" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor1" prefHeight="550.0" prefWidth="750.0" style="-fx-background-color: #263238#616161;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projecthr.StatController">
+   <children>
+      <CubicCurve controlX1="-241.5" controlX2="178.5" controlY1="-82.0" controlY2="-134.0" endX="375.5" endY="290.68218994140625" fill="DODGERBLUE" layoutX="375.0" layoutY="291.0" startX="-375.0" startY="290.0" stroke="BLACK" strokeWidth="0.0" />
+      <JFXButton buttonType="RAISED" layoutX="288.0" layoutY="298.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #1e90ff;" text=" " />
+      <JFXButton buttonType="RAISED" layoutX="288.0" layoutY="324.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #1e90ff;" text=" " />
+      <JFXButton buttonType="RAISED" layoutX="288.0" layoutY="350.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #1e90ff;" text=" " />
+      <JFXButton buttonType="RAISED" layoutX="288.0" layoutY="378.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #1e90ff;" text=" " />
+      <JFXButton buttonType="RAISED" layoutX="288.0" layoutY="406.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #1e90ff;" text=" " />
+      <JFXButton buttonType="RAISED" layoutX="288.0" layoutY="433.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #1e90ff;" text=" " />
+      <JFXButton buttonType="RAISED" layoutX="288.0" layoutY="457.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #1e90ff;" text=" " AnchorPane.bottomAnchor="99.0" />
+      <JFXButton buttonType="RAISED" layoutX="288.0" layoutY="485.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #1e90ff;" text=" " />
+      <JFXButton buttonType="RAISED" layoutX="288.0" layoutY="512.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #1e90ff;" text=" " AnchorPane.bottomAnchor="44.4" />
+      <JFXButton buttonType="RAISED" layoutX="288.0" layoutY="541.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #1e90ff;" text=" " />
+      <JFXSpinner layoutX="177.0" layoutY="19.0" prefHeight="251.0" prefWidth="383.0" />
+      <Label layoutX="296.0" layoutY="406.0" prefHeight="25.0" prefWidth="103.0" text="BMI                  :" textFill="WHITE" AnchorPane.leftAnchor="296.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="433.0" prefHeight="24.0" prefWidth="103.0" text="Heart Rate        :" textFill="WHITE" AnchorPane.leftAnchor="296.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="hLabel" layoutX="396.0" layoutY="350.0" prefHeight="24.0" prefWidth="58.0" text="6.1" textFill="WHITE" AnchorPane.leftAnchor="398.0" />
+      <Label layoutX="296.0" layoutY="450.0" prefHeight="38.0" prefWidth="103.0" text="Blood Pressure :" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="478.0" prefHeight="38.0" prefWidth="111.0" text="Diseases  :" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="541.0" prefHeight="24.0" prefWidth="103.0" text="Rating               :" textFill="WHITE" AnchorPane.leftAnchor="296.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="barbtn" buttonType="RAISED" layoutX="133.0" layoutY="254.0" onAction="#showbar" prefHeight="105.0" prefWidth="103.0" ripplerFill="#0d7ad900" style="-fx-background-color: ff5252; -fx-background-radius: 50%;" text="Show Chart" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="59.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../graph-bar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="back" buttonType="RAISED" layoutX="711.0" layoutY="1.0" onAction="#b2h" prefHeight="18.0" prefWidth="39.0" ripplerFill="#2d3851" style="-fx-background-color: whitesmoke;" text="&lt;" textFill="#638fff">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="bm" layoutX="396.0" layoutY="404.0" prefHeight="27.0" prefWidth="103.0" text="BMI                 " textFill="WHITE" AnchorPane.leftAnchor="396.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="djs" layoutX="427.0" layoutY="478.0" prefHeight="38.0" prefWidth="58.0" text="BMI               " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="hr" layoutX="396.0" layoutY="430.0" prefHeight="27.0" prefWidth="103.0" text="BMI                 " textFill="WHITE" AnchorPane.leftAnchor="396.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="bp" layoutX="432.0" layoutY="450.0" prefHeight="38.0" prefWidth="103.0" text="BMI                 " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="rat" layoutX="401.0" layoutY="543.0" prefHeight="19.0" prefWidth="94.0" text="BMI                 " textFill="WHITE" AnchorPane.leftAnchor="401.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="djs1" layoutX="428.0" layoutY="511.0" prefHeight="27.0" prefWidth="39.0" text="BMI               " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="bp1" layoutX="396.0" layoutY="450.0" prefHeight="38.0" prefWidth="103.0" text="BMI                 " textFill="WHITE" AnchorPane.leftAnchor="396.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="252.0" layoutY="27.0" opacity="0.8" prefHeight="235.0" prefWidth="235.0" style="-fx-background-radius: 50%; -fx-background-color: whitesmoke;" />
+      <ImageView fitHeight="45.0" fitWidth="52.0" layoutX="226.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="45.0" fitWidth="52.0" layoutX="236.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="45.0" fitWidth="52.0" layoutX="236.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="45.0" fitWidth="52.0" layoutX="226.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true" />
+      <Circle fx:id="imgcrcl" fill="DODGERBLUE" layoutX="369.0" layoutY="145.0" radius="117.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ProgressIndicator fx:id="pi" layoutX="435.0" layoutY="543.0" prefHeight="38.0" prefWidth="39.0" progress="0.0" />
+      <Label fx:id="wLabel" layoutX="400.0" layoutY="377.0" prefHeight="27.0" prefWidth="124.0" text="84" textFill="WHITE" AnchorPane.leftAnchor="400.0" />
+      <Label fx:id="ageLabel" layoutX="394.0" layoutY="326.0" prefHeight="20.0" prefWidth="94.0" text="age" textFill="WHITE" AnchorPane.leftAnchor="396.0" />
+      <Label layoutX="364.0" layoutY="478.0" prefHeight="38.0" prefWidth="94.0" text="Chronic :" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="324.0" layoutY="505.0" prefHeight="38.0" prefWidth="103.0" text="Non Chronic   :" textFill="WHITE" AnchorPane.leftAnchor="324.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="422.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" wrappingWidth="19.67578125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="296.0" layoutY="298.0" prefHeight="24.0" prefWidth="103.0" text="User                 :" textFill="WHITE" AnchorPane.leftAnchor="296.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="uname" layoutX="393.0" layoutY="300.0" prefHeight="17.0" prefWidth="58.0" text="Label" textFill="WHITE" AnchorPane.leftAnchor="396.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="324.0" prefHeight="24.0" prefWidth="103.0" text="Age                  :" textFill="WHITE" AnchorPane.leftAnchor="296.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="171.0" layoutY="350.0" prefHeight="24.0" prefWidth="111.0" text="Height              :" textFill="WHITE" AnchorPane.leftAnchor="296.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="379.0" prefHeight="24.0" prefWidth="103.0" text="Weight             :" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="421.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Foot" AnchorPane.leftAnchor="423.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="423.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KG">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="263.0" layoutY="568.0" minHeight="2.0" prefHeight="12.0" prefWidth="215.0" style="-fx-background-color: #1e90ff;" text=" " />
+      <Text fill="#eeeeee" layoutX="429.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
